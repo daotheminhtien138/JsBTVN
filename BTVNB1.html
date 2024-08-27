@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    console.log("Bài 1:");
+    function giaiThua(n) {
+      var gt = 1;
+      for (let i = 1; i <= n; i++) {
+        gt *= i;
+      }
+      console.log(`Lua thua cua 5 = ${gt}`);
+    }
+    giaiThua("5");
+
+    console.log("Bài 2:");
+    function daoNguoc(c) {
+      var a = "";
+      for (let i = c.length - 1; i >= 0; i--) {
+        a += c.charAt(i);
+      }
+      console.log(`Dao nguoc chuoi abcdefgh: ${a}`);
+    }
+    daoNguoc("abcdefgh");
+
+    console.log("Bài 3:");
+    function quocGia(n) {
+      let qg = "VN";
+      switch(qg){
+        case "VN":{
+            console.log("Việt Nam");
+            break;
+        }
+        case "EN":{
+            console.log("English");
+            break;
+        }
+        case "TQ":{
+            console.log("Trung Quốc");
+            break;
+        }
+        case "TL":{
+            console.log("Thái Lan");
+            break;
+        }
+        default:{
+            console.log("Không có quốc gia phù hợp");
+            break;
+        }
+      }
+      //quocGia("qg");
+      
+    }
+    console.log(`Ma quoc gia cua VN la: `)+quocGia("qg");
+
+    console.log("Bài 4:");
+    function chuoi15KiTu(){
+      let n="XinChaoMoiNguoiToiLaTien";
+      let c="...";
+      let x= n.substring(0,10);
+      let a=x.concat(c);
+      console.log(`XinChaoMoiNguoiToiLaTien = `)+console.log(`${a}`);
+    }
+    chuoi15KiTu("n");
+  </script>
+</html>
